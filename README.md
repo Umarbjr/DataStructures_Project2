@@ -1,15 +1,15 @@
 Program #2
 
-Name:
+Name: Umar Balogun Mohammed
 
 COSC 2030
 
-Section #
+Section # 11
 
-Competing: YES or NO
+Competing: NO
 
-Best run time:
+Best run time: 1.32 on the Linux
 
-How to compile: 
+How to compile: g++ ProgAss2.cpp
 
-Anything that doesn't work:
+Anything that doesn't work: It's all good
