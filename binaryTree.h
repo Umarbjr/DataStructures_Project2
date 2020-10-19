@@ -6,7 +6,6 @@ template<class T>
 class binaryTree {
 public:
     
-    
     binaryNode<T>* aHead;	
 	binaryNode<T>* bHead;
 	binaryNode<T>* cHead;
@@ -37,7 +36,7 @@ public:
 
 	long int size = 0;
     long long int foundCompare = 0;
-    long long int notFoundCompare =0;
+    long long int notFoundCompare = 0;
     long long int compares = 0;
         
     binaryTree(){
@@ -72,85 +71,85 @@ public:
 
 	void insert(T x) {
 		if (x[0] == 'a') {
-			insert(x, aHead);
+			return insert(x, aHead);
 		}
 		else if (x[0] == 'b') {
-			insert(x, bHead);
+			return insert(x, bHead);
 		}
 		else if (x[0] == 'c') {
-			insert(x, cHead);
+			return insert(x, cHead);
 		}
 		else if (x[0] == 'd') {
-			insert(x, dHead);
+			return insert(x, dHead);
 		}
 		else if (x[0] == 'e') {
-			insert(x, eHead);
+			return insert(x, eHead);
 		}
 		else if (x[0] == 'f') {
-			insert(x, fHead);
+			return insert(x, fHead);
 		}
 		else if (x[0] == 'g') {
-			insert(x, gHead);
+			return insert(x, gHead);
 		}
 		else if (x[0] == 'h') {
-			insert(x, hHead);
+			return insert(x, hHead);
 		}
 		else if (x[0] == 'i') {
-			insert(x, iHead);
+			return insert(x, iHead);
 		}
 		else if (x[0] == 'j') {
-			insert(x, jHead);
+			return insert(x, jHead);
 		}
 		else if (x[0] == 'k') {
-			insert(x, kHead);
+			return insert(x, kHead);
 		}
 		else if (x[0] == 'l') {
-			insert(x, lHead);
+			return insert(x, lHead);
 		}
 		else if (x[0] == 'm') {
-			insert(x, mHead);
+			return insert(x, mHead);
 		}
 		else if (x[0] == 'n') {
-			insert(x, nHead);
+			return insert(x, nHead);
 		}
 		else if (x[0] == 'o') {
-			insert(x, oHead);
+			return insert(x, oHead);
 		}
 		else if (x[0] == 'p') {
-			insert(x, pHead);
+			return insert(x, pHead);
 		}
 		else if (x[0] == 'q') {
-			insert(x, qHead);
+			return insert(x, qHead);
 		}
 		else if (x[0] == 'r') {
-			insert(x, rHead);
+			return insert(x, rHead);
 		}
 		else if (x[0] == 's') {
-			insert(x, sHead);
+			return insert(x, sHead);
 		}
 		else if (x[0] == 't') {
-			insert(x, tHead);
+			return insert(x, tHead);
 		}
 		else if (x[0] == 'u') {
-			insert(x, uHead);
+			return insert(x, uHead);
 		}
 		else if (x[0] == 'v') {
-			insert(x, vHead);
+			return insert(x, vHead);
 		}
 		else if (x[0] == 'w') {
-			insert(x, wHead);
+			return insert(x, wHead);
 		}
 		else if (x[0] == 'x') {
-			insert(x, xHead);
+			return insert(x, xHead);
 		}
 		else if (x[0] == 'y') {
-			insert(x, yHead);
+			return insert(x, yHead);
 		}
 		else if (x[0] == 'z') {
-			insert(x, zHead);
+			return insert(x, zHead);
 		}
 		else {
-			insert(x, ranHead);
+			return insert(x, ranHead);
 		}
 
 	}
@@ -168,6 +167,26 @@ public:
 			insert(x, t->right);
 		}
     }
+
+	binaryNode<T>* findMin(binaryNode<T>* t) {
+		if (t == nullptr) {
+			return nullptr;
+		}
+		else if (t->left == nullptr) {
+			return t;
+		}
+		return findMin(t->left);
+	}
+
+	binaryNode<T>* findMax(binaryNode<T>* t) {
+		if (t == nullptr) {
+			return nullptr;
+		}
+		else if (t->right == nullptr) {
+			return t;
+		}
+		return findMax(t->right);
+	}
 
     void remove(T x, binaryNode<T>*& t) {
 		if (x == "") return;
@@ -307,26 +326,6 @@ public:
 			return t;
 		}
 		
-	}
-
-	binaryNode<T>* findMin(binaryNode<T>* t) {
-		if (t == nullptr) {
-			return nullptr;
-		}
-		else if (t->left == nullptr) {
-			return t;
-		}
-		return findMin(t->left);
-	}
-
-	binaryNode<T>* findMax(binaryNode<T>* t) {
-		if (t == nullptr) {
-			return nullptr;
-		}
-		else if (t->right == nullptr) {
-			return t;
-		}
-		return findMax(t->right);
 	}
 
     int getNumberofNodes() { return size; }
