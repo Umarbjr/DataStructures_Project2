@@ -205,85 +205,85 @@ public:
 
     binaryNode<T>* find(T x) {
 		if (x[0] == 'a') {
-			find(x, aHead);
+			return find(x, aHead);
 		}
 		else if (x[0] == 'b') {
-			find(x, bHead);
+			return find(x, bHead);
 		}
 		else if (x[0] == 'c') {
-			find(x, cHead);
+			return find(x, cHead);
 		}
 		else if (x[0] == 'd') {
-			find(x, dHead);
+			return find(x, dHead);
 		}
 		else if (x[0] == 'e') {
-			find(x, eHead);
+			return find(x, eHead);
 		}
 		else if (x[0] == 'f') {
-			find(x, fHead);
+			return find(x, fHead);
 		}
 		else if (x[0] == 'g') {
-			find(x, gHead);
+			return find(x, gHead);
 		}
 		else if (x[0] == 'h') {
-			find(x, hHead);
+			return find(x, hHead);
 		}
 		else if (x[0] == 'i') {
-			find(x, iHead);
+			return find(x, iHead);
 		}
 		else if (x[0] == 'j') {
-			find(x, jHead);
+			return find(x, jHead);
 		}
 		else if (x[0] == 'k') {
-			find(x, kHead);
+			return find(x, kHead);
 		}
 		else if (x[0] == 'l') {
-			find(x, lHead);
+			return find(x, lHead);
 		}
 		else if (x[0] == 'm') {
-			find(x, mHead);
+			return find(x, mHead);
 		}
 		else if (x[0] == 'n') {
-			find(x, nHead);
+			return find(x, nHead);
 		}
 		else if (x[0] == 'o') {
-			find(x, oHead);
+			return find(x, oHead);
 		}
 		else if (x[0] == 'p') {
-			find(x, pHead);
+			return find(x, pHead);
 		}
 		else if (x[0] == 'q') {
-			find(x, qHead);
+			return find(x, qHead);
 		}
 		else if (x[0] == 'r') {
-			find(x, rHead);
+			return find(x, rHead);
 		}
 		else if (x[0] == 's') {
-			find(x, sHead);
+			return find(x, sHead);
 		}
 		else if (x[0] == 't') {
-			find(x, tHead);
+			return find(x, tHead);
 		}
 		else if (x[0] == 'u') {
-			find(x, uHead);
+			return find(x, uHead);
 		}
 		else if (x[0] == 'v') {
-			find(x, vHead);
+			return find(x, vHead);
 		}
 		else if (x[0] == 'w') {
-			find(x, wHead);
+			return find(x, wHead);
 		}
 		else if (x[0] == 'x') {
-			find(x, xHead);
+			return find(x, xHead);
 		}
 		else if (x[0] == 'y') {
-			find(x, yHead);
+			return find(x, yHead);
 		}
 		else if (x[0] == 'z') {
-			find(x, zHead);
+			return find(x, zHead);
 		}
 		else {
-			find(x, ranHead);
+			return find(x, ranHead);
 		}
 	}
 
